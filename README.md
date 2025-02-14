@@ -57,21 +57,23 @@ http://localhost:8000/api/leads
 
 ### Headers:
 
+| Key | Value |
+| --- | --- |
 | Authorization | Bearer token_gerado |
 
 ### Body (JSON), apenas o 'nome' é obrigatório:
 
 ```sh
 {
-    "nome" : "nome",
-    "email" : "email@gmail.com" ,
-	"telefone" : "00000000000" ,
-	"usuario_atribuido" : "0",
-	"lead_ganho" : "0" ,
-	"interesses" : "interesses" ,
-	"anotacoes" : "anotacoes" ,
-	"id_cliente" : "0" ,
-	"id_origem" : "0"
+"nome" : "nome",
+"email" : "email@gmail.com",
+"telefone" : "00000000000",
+"usuario_atribuido" : "0",
+"lead_ganho" : "0",
+"interesses" : "interesses",
+"anotacoes" : "anotacoes",
+"id_cliente" : "0",
+"id_origem" : "0"
 }
 ```
 
