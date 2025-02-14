@@ -49,10 +49,16 @@ php artisan serve
 
 ## Instruções da API:
 
-### Endpoint (POST):
+### Endpoint Leads (POST):
 
 ```sh
 http://localhost:8000/api/leads
+```
+
+### Endpoint Origins (Get):
+
+```sh
+http://localhost:8000/api/origins
 ```
 
 ### Headers:
@@ -61,7 +67,7 @@ http://localhost:8000/api/leads
 | --- | --- |
 | Authorization | Bearer token_gerado |
 
-### Body (JSON), apenas o 'nome' é obrigatório:
+### Body para Leads (JSON), apenas o 'nome' e 'id_origem' são campos obrigatórios:
 
 ```sh
 {

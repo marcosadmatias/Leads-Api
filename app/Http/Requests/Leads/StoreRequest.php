@@ -32,7 +32,7 @@ class StoreRequest extends FormRequest
             'interesses' => 'nullable|string|max:45',
             'anotacoes' => 'nullable|string',
             'id_cliente' => 'nullable|integer',
-            'id_origem' => 'nullable|integer|exists:origens,id',
+            'id_origem' => 'required|integer|exists:origens,id',
         ];
     }
 
@@ -60,6 +60,7 @@ class StoreRequest extends FormRequest
 
             'id_cliente.integer' => 'O ID do cliente deve ser um número inteiro.',
 
+            'id_origem.required' => 'O ID da origem é obrigatório.',
             'id_origem.integer' => 'O ID da origem deve ser um número inteiro.',
             'id_origem.exists' => 'A origem informada não existe.',
         ];
